@@ -1,152 +1,57 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>温泽锋 - 个人介绍</title>
-<style>
-  :root {
-    --ink: #1f2933;
-    --muted: #6b7280;
-    --accent: #2563eb;
-    --accent-soft: #eff4ff;
-    --bg: #f5f7fa;
-    --card: #ffffff;
-    --line: #e5e7eb;
-  }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
-  body {
-    font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans SC", -apple-system, "Segoe UI", sans-serif;
-    background: var(--bg);
-    color: var(--ink);
-    line-height: 1.7;
-    min-height: 100vh;
-  }
-  .page {
-    max-width: 860px;
-    margin: 0 auto;
-    padding: 48px 24px 24px;
-  }
-  .hero {
-    background: linear-gradient(135deg, #2563eb 0%, #4f46e5 100%);
-    border-radius: 16px;
-    padding: 48px 40px;
-    color: #fff;
-    text-align: center;
-    box-shadow: 0 12px 32px rgba(37, 99, 235, 0.22);
-  }
-  .avatar {
-    width: 96px;
-    height: 96px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.18);
-    border: 2px solid rgba(255, 255, 255, 0.55);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 40px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    margin-bottom: 16px;
-    user-select: none;
-  }
-  .hero h1 { font-size: 32px; font-weight: 700; letter-spacing: 2px; }
-  .hero .subtitle { margin-top: 10px; font-size: 15px; opacity: 0.92; }
-  .hero .subtitle .dot { margin: 0 6px; opacity: 0.6; }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>温泽锋 - 自我介绍</title>
+  <style>
+    body {
+      font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+      background-color: #ffffff;
+      color: #000000;
+      line-height: 1.8;
+      margin: 0;
+      padding: 24px;
+    }
 
-  .card {
-    background: var(--card);
-    border: 1px solid var(--line);
-    border-radius: 12px;
-    padding: 28px 32px;
-    margin-top: 24px;
-  }
-  .card h2 {
-    font-size: 17px;
-    font-weight: 600;
-    color: var(--accent);
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 16px;
-  }
-  .card h2::before {
-    content: "";
-    width: 4px;
-    height: 16px;
-    border-radius: 2px;
-    background: var(--accent);
-    display: inline-block;
-  }
+    h1 {
+      font-size: 24px;
+      font-weight: 700;
+      margin: 0 0 16px;
+    }
 
-  .info-list { list-style: none; display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px 32px; }
-  .info-list li { display: flex; align-items: baseline; gap: 10px; font-size: 15px; }
-  .info-list .label { color: var(--muted); flex-shrink: 0; width: 48px; }
-  .info-list .value { font-weight: 500; color: var(--ink); }
+    p {
+      margin: 0 0 24px;
+    }
 
-  .about p { font-size: 15px; color: #374151; }
+    dl {
+      margin: 0;
+      font-size: 16px;
+    }
 
-  .tags { display: flex; flex-wrap: wrap; gap: 10px; }
-  .tag {
-    background: var(--accent-soft);
-    color: var(--accent);
-    font-size: 13px;
-    padding: 6px 14px;
-    border-radius: 999px;
-    font-weight: 500;
-  }
+    dt {
+      font-weight: 600;
+      margin-top: 12px;
+    }
 
-  footer {
-    text-align: center;
-    color: var(--muted);
-    font-size: 13px;
-    margin-top: 32px;
-    padding-bottom: 24px;
-  }
-
-  @media (max-width: 640px) {
-    .page { padding: 24px 16px 16px; }
-    .hero { padding: 36px 20px; }
-    .hero h1 { font-size: 26px; }
-    .card { padding: 22px 20px; }
-    .info-list { grid-template-columns: 1fr; }
-  }
-</style>
+    dd {
+      margin: 0;
+    }
+  </style>
 </head>
 <body>
-  <div class="page">
-    <header class="hero">
-      <div class="avatar">温</div>
-      <h1>温泽锋</h1>
-      <p class="subtitle">广东科学技术职业学院<span class="dot">·</span>大模型应用专业<span class="dot">·</span>大专</p>
-    </header>
+  <h1>自我介绍</h1>
+  <p>大家好，我是温泽锋。</p>
 
-    <section class="card">
-      <h2>基本信息</h2>
-      <ul class="info-list">
-        <li><span class="label">姓名</span><span class="value">温泽锋</span></li>
-        <li><span class="label">学历</span><span class="value">大专</span></li>
-        <li><span class="label">学校</span><span class="value">广东科学技术职业学院</span></li>
-        <li><span class="label">专业</span><span class="value">大模型应用</span></li>
-      </ul>
-    </section>
-
-    <section class="card about">
-      <h2>关于我</h2>
-      <p>你好，我是温泽锋，广东科学技术职业学院大模型应用专业的学生。我热衷于学习人工智能与大模型相关技术，希望用技术把想法变成现实，不断提升自己的专业能力。</p>
-    </section>
-
-    <section class="card">
-      <h2>学习方向</h2>
-      <div class="tags">
-        <span class="tag">大语言模型应用</span>
-        <span class="tag">提示词工程</span>
-        <span class="tag">AI 应用开发</span>
-      </div>
-    </section>
-
-    <footer>温泽锋 · 广东科学技术职业学院 · 大模型应用专业</footer>
-  </div>
+  <dl>
+    <dt>姓名</dt>
+    <dd>温泽锋</dd>
+    <dt>出生日期</dt>
+    <dd>2007-06-11</dd>
+    <dt>性别</dt>
+    <dd>男</dd>
+    <dt>学校</dt>
+    <dd>广东科学技术职业学院</dd>
+  </dl>
 </body>
 </html>
