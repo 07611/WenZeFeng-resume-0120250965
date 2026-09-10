@@ -3,55 +3,120 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>温泽锋 - 自我介绍</title>
+  <title>温泽锋 - 个人简历</title>
+
+  <!-- 链入式 CSS：引入外部样式文件 s1.css -->
+  <link href="s1.css" rel="stylesheet">
+
+  <!-- 内嵌式 CSS：写在 <style> 标签内的样式 -->
   <style>
     body {
       font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
-      background-color: #ffffff;
-      color: #000000;
-      line-height: 1.8;
+      line-height: 1.9;
       margin: 0;
       padding: 24px;
     }
 
     h1 {
-      font-size: 24px;
+      font-size: 26px;
       font-weight: 700;
-      margin: 0 0 16px;
+      margin: 0 0 4px;
+    }
+
+    .sub {
+      font-size: 14px;
+      color: #666666;
+      margin: 0 0 20px;
+    }
+
+    h2 {
+      font-size: 18px;
+      font-weight: 600;
+      margin: 28px 0 8px;
     }
 
     p {
-      margin: 0 0 24px;
+      margin: 6px 0;
+      font-size: 16px;
     }
 
     dl {
-      margin: 0;
+      margin: 8px 0;
       font-size: 16px;
     }
 
     dt {
       font-weight: 600;
-      margin-top: 12px;
+      margin-top: 10px;
     }
 
     dd {
       margin: 0;
     }
+
+    button {
+      font-family: inherit;
+      font-size: 15px;
+      padding: 10px 18px;
+      min-height: 44px;
+      cursor: pointer;
+      border: 1px solid #333333;
+      background-color: #ffffff;
+      border-radius: 4px;
+      margin-top: 24px;
+    }
+
+    button:hover {
+      background-color: #f0f0f0;
+    }
   </style>
 </head>
 <body>
-  <h1>自我介绍</h1>
-  <p>大家好，我是温泽锋。</p>
+  <h1>温泽锋 - 个人简历</h1>
+  <p class="sub">广东科学技术职业学院 · 在读</p>
 
-  <dl>
-    <dt>姓名</dt>
-    <dd>温泽锋</dd>
-    <dt>出生日期</dt>
-    <dd>2007-06-11</dd>
-    <dt>性别</dt>
-    <dd>男</dd>
-    <dt>学校</dt>
-    <dd>广东科学技术职业学院</dd>
-  </dl>
+  <!-- 行内式 CSS：用 style 属性直接在标签上写样式 -->
+  <p style="color: red; font-size: 20px;"><a href="https://github.com/07611">姓名: 温泽锋</a></p>
+
+  <h2>基本信息</h2>
+  <p>出生日期: 2007-06-11</p>
+  <p>性别: 男</p>
+  <p class="todo">籍贯: 待补充</p>
+  <p class="todo">居住地: 待补充</p>
+  <p class="todo">邮箱: 待补充</p>
+  <p class="todo">电话: 待补充</p>
+
+  <h2>个人经历</h2>
+  <p style="font-size:larger">广东科学技术职业学院（在读）</p>
+
+  <h2>兴趣爱好</h2>
+  <p class="todo">待补充</p>
+
+  <h2>项目</h2>
+  <p class="todo">待补充</p>
+
+  <h2>竞赛</h2>
+  <p style="color: blue" class="todo">待补充</p>
+
+  <!-- 行内式 JavaScript：用 onclick 属性直接写调用 -->
+  <button onclick="showMsg()">点我打个招呼</button>
+  <p id="msg"></p>
+
+  <footer>
+    <p id="time"></p>
+  </footer>
+
+  <!-- 内嵌式 JavaScript：写在 <script> 标签内的代码 -->
+  <script>
+    function showMsg() {
+      var el = document.getElementById("msg");
+      if (el) {
+        el.innerHTML = "你好，我是温泽锋，来自广东科学技术职业学院。";
+      }
+    }
+  </script>
+
+  <!-- 外链式（链入式）JavaScript：引入外部脚本文件 s1.js -->
+  <script src="s1.js"></script>
 </body>
 </html>
