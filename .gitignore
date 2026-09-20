@@ -6,3 +6,5 @@ _shots/
 
 # 本机一键上传脚本，不需要上传
 一键上传简历.bat
+一键上传任意项目.bat
+upload-any.ps1
